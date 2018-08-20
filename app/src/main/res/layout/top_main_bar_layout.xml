@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_content_layout_height"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                app:srcCompat="@drawable/icon_logo"
+                android:layout_width="100dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/point_button"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white_default"
+                    android:padding="7dp"
+                    android:src="@drawable/icon_point" />
+
+                <ImageView
+                    android:id="@+id/search_button"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white_default"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/icon_search" />
+
+                <ImageView
+                    android:id="@+id/library_button"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white_default"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/icon_library" />
+
+                <ImageView
+                    android:id="@+id/mymenu_button"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_white_default"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/icon_mymenu" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/timeline_top_bar_border"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+</LinearLayout>

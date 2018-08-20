@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- permission needed to check app state background / foreground -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_craftory_2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YoutubeActivity" />
+        <activity
+            android:name=".WebActivity"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".YoutubeActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SigninActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CommentActivity"
+            android:parentActivityName=".YoutubeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReportActivity"
+            android:parentActivityName=".YoutubeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PhotoContentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebtoonContentActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider124760188015147"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ChargeActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="igaworks_app_key"
+            android:value="26150119" />
+        <meta-data
+            android:name="igaworks_hash_key"
+            android:value="b00d91cec74242cd" />
+        <meta-data
+            android:name="igaworks_reward_server_type"
+            android:value="server" />
+
+        <activity
+            android:name="com.igaworks.adpopcorn.activity.ApOfferWallActivity_NT"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igaworks.adpopcorn.activity.ApVideoAdActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.igaworks.adpopcorn.pluslock.activity.PlusLockActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <!-- 플러스락 restart 서비스 추가 -->
+        <service
+            android:name="com.igaworks.adpopcorn.pluslock.IgawPlusLockRestartService"
+            android:label="PlusLock"
+            android:process="com.igaworks.pluslock" />
+
+        <!-- 플러스락 서비스 추가 -->
+        <service
+            android:name="com.igaworks.adpopcorn.pluslock.IgawPlusLockService"
+            android:label="PlusLock"
+            android:process="com.igaworks.pluslock" />
+
+        <receiver android:name="com.igaworks.adpopcorn.pluslock.IgawPlusLockReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".TestAcitivity" />
+        <activity
+            android:name=".GifNativeActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CommentDetailActivity"
+            android:parentActivityName=".CommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MyInfoActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SettingActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubChannelActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PublicBoardActivity" />
+        <activity
+            android:name=".NoticeActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CSActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Added for Parse push notifications -->
+        <!--
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".receiver.CustomPushReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+
+
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="431510102598" />
+        -->
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast" />
+            </intent-filter>
+        </receiver>
+
+        <!-- IMPORTANT: Change "YOUR_SENDER_ID" to your GCM Sender Id. -->
+        <!-- android:value="id:431510102598" android:value="id:987198032907" -->
+        <meta-data
+            android:name="com.parse.push.gcm_sender_id"
+            android:value="id:431510102598" />
+
+        <!-- /Added for Parse push notifications -->
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://767773769337623:QwXOS7WCeKnyfGrr995ZgfUMmI0@dqn5e8b6u" />
+
+        <activity android:name=".ImportChargeActivity" />
+        <activity android:name=".ChargeWebActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="anicast" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainBoardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RequestActivity"
+            android:parentActivityName=".UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PostingDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ArtPostingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PatronActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".PatronDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GifNativePreviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingleLineEditorActivity"
+            android:parentActivityName=".MyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".YoutubePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FollowListActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContentManagerActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NovelActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SerieseActivity"
+            android:parentActivityName=".MainBoardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PostEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PostEditIllustActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PostEditWebtoonActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PostEditYoutubeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PostEditNovelActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseManagerListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SerieseAddFromExistActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SerieseManagerDetailActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SerieseItemAddPostActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseItemAddIllustActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseItemAddWebtoonActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseItemAddYoutubeActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseItemAddNovelActivity"
+            android:parentActivityName=".SerieseManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CommercialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CheerActivity"
+            android:parentActivityName=".UserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PokeActivity"
+            android:parentActivityName=".UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PokeResponseActivity"
+            android:parentActivityName=".UserActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".SignFirstTimeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RecommendTagActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RecommendCreatorActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LibraryActivity" />
+        <activity android:name=".PatronDescriptionEditorActivity" />
+        <activity
+            android:name=".CommentSocialActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RecommendIllustActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".EventManagerActivity" />
+        <activity android:name=".EventEditActivity" />
+        <activity android:name=".NoticeManagerActivity" />
+        <activity android:name=".NoticeEditActivity" />
+        <activity
+            android:name=".SerieseItemEditWebtoonActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseItemEditIllustActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SerieseItemEditPostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".CreateArtworkActivity" />
+        <activity android:name=".CreateFundingActivity" />
+        <activity android:name=".CreateSerieseActivity" />
+        <activity android:name=".PatronUserActivity" />
+        <activity
+            android:name=".BoxManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".OriginalIllustActivity" />
+        <activity android:name=".LikeUserListActivity" />
+        <activity android:name=".PokeMakerActivity" />
+        <activity android:name=".DMActivity" />
+        <activity android:name=".DMChatActivity" />
+        <activity android:name=".RewardVideoActivity" />
+        <activity android:name=".AlchemyItemManagerActivity" />
+        <activity android:name=".TagItemMakerActivity" />
+        <activity android:name=".TagHomeActivity" />
+        <activity android:name=".TagItemEditorActivity" />
+        <activity
+            android:name=".TagInputActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".TagInputForSerieseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".FundingActivity" />
+        <activity
+            android:name=".FindUserActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".SocialMSGActivity" />
+        <activity android:name=".FundingMarketManagerActivity" />
+        <activity android:name=".DealerMakerActivity" />
+        <activity android:name=".FundingMarketItemAddActivity" />
+        <activity android:name=".FundingMarketSalesItemMakerActivity" />
+        <activity android:name=".FundingMarketSalesItemEditorActivity" />
+        <activity android:name=".FundingItemDetailActivity" />
+        <activity android:name=".GoodsFundingActivity" />
+        <activity android:name=".FundingMarketItemDetailEditorActivity" />
+        <activity
+            android:name=".PatronManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PatronDetailEditorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoodsFundingEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FundingMarketCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FundingJoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PhoneInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FundingItemDetailForSaleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FundingJoinEditActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ImmoticonActivity" />
+        <activity android:name=".InterstitialAdActivity" />
+        <activity android:name=".IgaDAActivity" />
+        <activity android:name=".CommercialRequestActivity" />
+        <activity android:name=".OptionPriceSettingActivity"></activity>
+    </application>
+
+</manifest>

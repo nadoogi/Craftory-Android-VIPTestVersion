@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/create_button"
+        android:layout_below="@+id/top_bar">
+
+        <!-- ListView、ScrollView、RecyclerView、Other -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/new_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/timeline_background"
+            tools:listitem="@layout/list_item_timeline_item" />
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+</RelativeLayout>

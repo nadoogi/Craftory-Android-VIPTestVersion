@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/border_solo_gray"
+        android:orientation="vertical"
+        android:padding="1px">
+
+        <ss.com.bannerslider.views.BannerSlider
+            android:id="@+id/banner_slider"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/white"
+            app:defaultBanner="1"
+            app:defaultIndicators="round_square"
+            app:interval="5000"
+            app:loopSlides="true">
+
+        </ss.com.bannerslider.views.BannerSlider>
+    </LinearLayout>
+
+</LinearLayout>

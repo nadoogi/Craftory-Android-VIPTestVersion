@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="basic_color">#b1b1b1</color>
+    <color name="basic_point_color">#ea5882</color>
+    <color name="basic_point_color_selected">#edd6da</color>
+    <color name="basic_point_color_2">#1197fb</color>
+    <color name="basic_main_color">#2c1a4e</color>
+    <color name="basic_main_color_2">#88739a</color>
+    <color name="basic_main_color_3">#482965</color>
+    <color name="basic_main_color_4">#8a759c</color>
+    <color name="basic_sub_color">#BFB8CC</color>
+
+    <color name="basic_gray_color">#999999</color>
+    <color name="basic_gray_color2">#cccccc</color>
+
+
+    <color name="border_upper_gray">#c3d5d5</color>
+    <color name="border_under_gray">#d1dfdf</color>
+    <color name="border_solo_gray">#d7d7d7</color>
+    <color name="border_solo_gray_support">#e7e7e7</color>
+    <color name="dashboard_background">#f6f6f6</color>
+
+    <color name="point_three_color_1">#ff8bac</color>
+    <color name="point_three_color_2">#ff6c95</color>
+    <color name="point_three_color_3">#ff4a7d</color>
+
+    <color name="login_input_background">#e7e3eb</color>
+
+    <color name="filter_button_default">#b2b2b2</color>
+
+    <color name="black_trans_90">#90e0e0e0</color>
+    <color name="black_trans_50">#50222222</color>
+
+
+    <color name="rcProgressColor">#ea5882</color>
+    <color name="rcSecondaryProgressColor"></color>
+    <color name="rcBackgroundColor">#e2e2e2</color>
+    <color name="rcIconBackgroundColor"></color>
+
+    <!--
+
+    base theme
+    <color name="basic_color">#b1b1b1</color>
+    <color name="basic_point_color">#167bc7</color>
+    <color name="basic_point_color_2">#1197fb</color>
+    <color name="basic_text_color">#b1b1b1</color>
+
+    first theme
+    <color name="basic_color">#b1b1b1</color>
+    <color name="basic_point_color">#EC6783</color>
+    <color name="basic_point_color_2">#1197fb</color>
+    <color name="basic_text_color">#2C1A4E</color>
+
+    -->
+
+
+    <color name="timeline_background">#f3f4f5</color>
+    <color name="timeline_top_bar_border">#e7eaed</color>
+    <color name="timeline_top_bar_background">#01a89e</color>
+    <color name="timeline_text_color_1">#167bc7</color>
+    <color name="timeline_text_color_2">#637786</color>
+
+    <color name="f_button_white">#fafafa</color>
+    <color name="f_button_white_pressed">#f1f1f1</color>
+    <color name="f_button_half_black">#808080</color>
+
+    <color name="menu_line_1">#e6e6e6</color>
+    <color name="menu_background">#f2f2f2</color>
+
+    <color name="posting_label">#efeff4</color>
+    <color name="posting_label_text">#8b7e79</color>
+
+    <color name="artwork_label">#efeff4</color>
+
+    <color name="colorPrimary">#d0d0d0</color>
+    <color name="colorPrimary2">#ffffff</color>
+    <color name="colorPrimaryDark">#e13e6c</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorText">#b1b1b1</color>
+
+    <color name="top_nav">#161616</color>
+    <color name="top_nav_selected">#ffffff</color>
+    <color name="top_nav_trans">#40000000</color>
+
+    <color name="white_gray">#e3e3e3</color>
+    <color name="white_gray_add">#cfcfcf</color>
+
+    <color name="stage_head">#32273f</color>
+    <color name="stage_head_text">#7c7188</color>
+
+    <color name="list_item_description_background">#1a1520</color>
+    <color name="list_item_description_text">#b4a8c1</color>
+    <color name="list_item_name_text">#aaaaaa</color>
+
+    <color name="youtubeactivity_header_background">#ffffff</color>
+    <color name="youtubeactivity_title_color">#333333</color>
+    <color name="youtubeactivity_body_color">#333333</color>
+    <color name="youtubeactivity_text_black">#666666</color>
+    <color name="youtubeactivity_list_background">#f7f7f7</color>
+
+    <color name="basic_button_text_color">#ffffff</color>
+
+    <color name="youtubeactivity_comment_background">#ffffff</color>
+    <color name="youtubeactivity_channel_background">#f7f7f7</color>
+
+    <color name="identity_color">#1a1520</color>
+    <color name="identity_color_selected">#7c7188</color>
+
+    <color name="feedback_layout_border_color">#e6e6e6</color>
+
+    <color name="category_color">#369fb5</color>
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="primary">#3C515C</color>
+    <color name="primary_dark">#142E3C</color>
+    <color name="accent">#40c4ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#FF000000</color>
+    <color name="black_80">#80000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="text_enabled">#FFFFFFFF</color>
+    <color name="text_disabled">#4DFFFFFF</color>
+
+    <color name="icon_enabled">#FFFFFFFF</color>
+    <color name="icon_disabled">#FF63727B</color>
+
+    <color name="medium_text_enabled">#FF000000</color>
+    <color name="medium_text_disabled">#4D000000</color>
+
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="teal_500">#009688</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="light_green_500">#8BC34A</color>
+
+    <color name="photo_like_color">#ffffff</color>
+    <color name="photo_liked_color">#2db2ff</color>
+
+    <color name="youtube_like_color">#333333</color>
+    <color name="youtube_liked_color">#2db2ff</color>
+    <color name="cheer_point_color">#ff2b2b</color>
+
+    <integer-array name="custom_tab_colors">
+        <item>@color/light_blue_500</item>
+        <item>@color/cyan_500</item>
+        <item>@color/teal_500</item>
+        <item>@color/green_500</item>
+        <item>@color/light_green_500</item>
+    </integer-array>
+
+    <color name="custom_default_fill">#33bbaa</color>
+    <color name="custom_default_edge">#119999</color>
+    <color name="custom_active_fill">#119999</color>
+    <color name="custom_active_edge">#008888</color>
+    <color name="custom_disabled_fill">#8833bbaa</color>
+    <color name="custom_disabled_edge">#bb33bbaa</color>
+
+</resources>

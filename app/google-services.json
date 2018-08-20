@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "431510102598",
+    "firebase_url": "https://anicast-b477b.firebaseio.com",
+    "project_id": "anicast-b477b",
+    "storage_bucket": "anicast-b477b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431510102598:android:64b3cd8c51f94b9e",
+        "android_client_info": {
+          "package_name": "cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431510102598-sv295uvu01tldbp5ou9a9i1cqocqfrbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast",
+            "certificate_hash": "5548d7daf06b037eba6784dabceabe2fbe8f44ac"
+          }
+        },
+        {
+          "client_id": "431510102598-vu9pu0i8rm6npcg9hc3rh5785n0u363h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuvM-rjM1yX6_L6WX9m7ix8dahf7XYWog"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431510102598-vu9pu0i8rm6npcg9hc3rh5785n0u363h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

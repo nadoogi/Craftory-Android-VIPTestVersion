@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.TagHomeActivity">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/image_background_1px" />
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:shadowColor="#000000"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                android:shadowRadius="3"
+                android:text="#TAG"
+                android:textColor="@color/basic_point_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tag_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/header"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="@color/basic_point_color"
+        app:tabPadding="5dp"
+        app:tabSelectedTextColor="@color/basic_point_color"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabTextColor="@color/timeline_text_color_2" />
+
+    <LinearLayout
+        android:id="@+id/tag_tabs_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tag_tabs"
+        android:background="#d7d7d7"
+        android:orientation="vertical"></LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tag_tabs_divider"
+        android:background="#f0f0f0" />
+</RelativeLayout>

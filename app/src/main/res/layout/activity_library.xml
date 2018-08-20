@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.LibraryActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_height"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/top_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/library_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/top_bar"
+        android:background="#ffffff"
+        app:tabIndicatorColor="@color/basic_point_color"
+        app:tabMode="fixed"
+        app:tabPadding="5dp"
+        app:tabSelectedTextColor="@color/basic_point_color"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabTextColor="@color/timeline_text_color_2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/library_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/library_tabs"
+        android:background="#ffffff" />
+</RelativeLayout>

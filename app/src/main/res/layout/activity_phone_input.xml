@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.PhoneInputActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_height"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/top_bar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/editor_subtitle_padding_size">
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전화 번호"
+                android:textColor="@color/basic_main_color"
+                android:textSize="@dimen/editor_subtitle_font_size" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint="전화번호를 입력하세요"
+                android:inputType="text"
+                android:minLines="3"
+                android:padding="@dimen/editor_text_input_padding"
+                android:textColor="@color/basic_main_color_2"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/phone_reset"
+                android:layout_width="@dimen/editor_text_input_reset_image_size"
+                android:layout_height="@dimen/editor_text_input_reset_image_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/editor_text_input_reset_padding"
+                app:srcCompat="@drawable/icon_delete_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@+id/title"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/border_solo_gray"
+                android:orientation="vertical" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sms_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_radius_0dp_point_full_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView209"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="문자 발송"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/confirm_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="false"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="top"
+                    android:hint="인증번호를 입력하세요"
+                    android:inputType="text"
+                    android:minLines="3"
+                    android:padding="@dimen/editor_text_input_padding"
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/confirm_num_reset"
+                    android:layout_width="@dimen/editor_text_input_reset_image_size"
+                    android:layout_height="@dimen/editor_text_input_reset_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/editor_text_input_reset_padding"
+                    app:srcCompat="@drawable/icon_delete_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@+id/title"
+                    android:layout_alignParentBottom="false"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/border_solo_gray"
+                    android:orientation="vertical" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_radius_0dp_point_full_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2091"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

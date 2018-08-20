@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="request_type">
+
+        <item>후원받기</item>
+        <item>제작요청</item>
+
+    </string-array>
+
+    <string-array name="creation_type">
+
+        <item>웹툰</item>
+        <!--
+        <item>웹소설</item>
+        <item>유튜브 영상</item> -->
+        <item>일러스트/사진</item>
+        <item>일러스트집/사진집</item>
+        <item>굿즈</item>
+        <item>커미션</item>
+        <item>기타 </item>
+
+
+    </string-array>
+
+    <string-array name="category_type">
+
+        <item>책류</item>
+        <item>패션용품</item>
+        <item>기념품</item>
+        <item>뱃지류</item>
+        <item>쿠션</item>
+        <item>문구/펜시</item>
+        <item>이벤트</item>
+
+    </string-array>
+
+    <string-array name="seriese_creation_type">
+
+        <item>웹툰</item>
+        <item>일러스트/사진</item>
+        <item>일러스트집/사진집</item>
+    </string-array>
+
+    <string-array name="open_type">
+
+        <item>전체 공개</item>
+        <item>후원자 공개</item>
+
+    </string-array>
+
+    <string-array name="price_type">
+        <item>무료</item>
+        <item>유료</item>
+        <item>부분유료(미리보기 구매)</item>
+    </string-array>
+
+
+    <string-array name="reward_exist">
+
+        <item>없음</item>
+        <item>있음</item>
+
+    </string-array>
+
+    <string-array name="bank">
+
+        <item>신한</item>
+        <item>농협</item>
+        <item>기업</item>
+        <item>국민</item>
+        <item>우리</item>
+        <item>KEB하나</item>
+        <item>SC제일</item>
+        <item>경남</item>
+        <item>광주</item>
+        <item>대구</item>
+        <item>부산</item>
+        <item>산업</item>
+        <item>상호저축</item>
+        <item>새마을</item>
+        <item>수협</item>
+        <item>신협</item>
+        <item>우체국</item>
+        <item>전북</item>
+        <item>제주</item>
+        <item>씨티</item>
+
+    </string-array>
+
+
+</resources>

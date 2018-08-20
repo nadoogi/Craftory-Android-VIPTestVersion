@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView239"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[환불 가이드]"
+                    android:textColor="@color/basic_main_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView240"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="- 무료로 지급된 박스는 환불되지 않습니다."
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView244"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="- 입금의 경우 매주 화요일, 금요일에 진행됩니다.(공휴일 제외)"
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView241"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="- 결제 취소가 가능한 경우 취소가 진행되며, 별도의 수수료를 부과하지 않습니다."
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView242"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="- 환불시 10%의 환불수수료를 공제하며, 10,000원 미만의 경우는 1,000원의 수수료가 발생하고, 1,000원 이하는 환불이 불가합니다."
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView243"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="- 이미 사용한 BOX에 대한 환불은 불가합니다."
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textView245"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="* 환불 요청은 가입한 메일 계정으로만 가능하며, 가입한 계정과 다른 메일로 문의 할 경우 상담이 불가합니다. "
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_radius_50dp_point_full_button"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView246"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일 문의하기"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

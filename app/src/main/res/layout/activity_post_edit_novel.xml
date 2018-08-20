@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.PostEditIllustActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_height"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/top_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/editor_subtitle_padding_size">
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="대표 이미지 등록"
+                        android:textColor="@color/basic_main_color"
+                        android:textSize="@dimen/editor_subtitle_font_size" />
+
+                </LinearLayout>
+
+                <com.beardedhen.androidbootstrap.BootstrapWell
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/editor_preview_layout_height"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/editor_bootstrap_pannel_margin"
+                    android:layout_marginLeft="@dimen/editor_bootstrap_pannel_margin"
+                    android:layout_marginRight="@dimen/editor_bootstrap_pannel_margin"
+                    app:bootstrapSize="xs">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/represent_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/editor_preview_image_height"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <LinearLayout
+                            android:id="@+id/represent_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/button_radius_5dp_point_full_button"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/editor_image_find_button_padding_bottom"
+                            android:paddingLeft="@dimen/editor_image_find_button_padding_left"
+                            android:paddingRight="@dimen/editor_image_find_button_padding_right"
+                            android:paddingTop="@dimen/editor_image_find_button_padding_top">
+
+                            <TextView
+                                android:id="@+id/textView162"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="이미지 찾기"
+                                android:textColor="#ffffff"
+                                android:textSize="@dimen/editor_button_text_default_size" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.beardedhen.androidbootstrap.BootstrapWell>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <include
+                    layout="@layout/part_layout_editor_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/save_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/editor_layout_left_margin"
+                    android:layout_marginRight="@dimen/editor_layout_right_margin"
+                    android:background="@drawable/button_radius_5dp_point_full_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/editor_text_input_padding">
+
+                    <TextView
+                        android:id="@+id/textView163"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수정 완료"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/editor_button_text_default_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

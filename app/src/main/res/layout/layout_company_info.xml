@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView233"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="company"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView231"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bootstrap_h5_hori_padding"
+            android:gravity="center_horizontal"
+            android:text="(주)크래프토리"
+            android:textColor="@color/basic_main_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2331"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEO"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView2311"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bootstrap_h5_hori_padding"
+            android:gravity="center_horizontal"
+            android:text="Choi Sang Gyu"
+            android:textColor="@color/basic_main_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView235"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Biz no."
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView236"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bootstrap_h5_hori_padding"
+            android:gravity="center_horizontal"
+            android:text="332-88-01068"
+            android:textColor="@color/basic_main_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView23312"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add."
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView23112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bootstrap_h5_hori_padding"
+            android:gravity="center_horizontal"
+            android:text="경기도 고양시 일산동구 동국로 32 산학협력관 826호"
+            android:textColor="@color/basic_main_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView23313"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tel."
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView23113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bootstrap_h5_hori_padding"
+            android:gravity="center_horizontal"
+            android:text="010-9970-7390"
+            android:textColor="@color/basic_main_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2399"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bootstrap_h5_hori_padding"
+            android:gravity="center_horizontal"
+            android:text="@ 2018 CRAFTORY CO. LTD. Alright Reserved"
+            android:textColor="@color/basic_main_color"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

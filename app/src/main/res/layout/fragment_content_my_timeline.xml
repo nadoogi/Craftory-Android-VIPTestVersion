@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- ListView、ScrollView、RecyclerView、Other -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/new_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:fab_addButtonColorNormal="@color/f_button_white"
+        app:fab_addButtonColorPressed="@color/f_button_white_pressed"
+        app:fab_addButtonPlusIconColor="@color/f_button_half_black"
+        app:fab_addButtonSize="normal"
+        app:fab_addButtonStrokeVisible="false"
+        app:fab_expandDirection="up"
+        app:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/commercial_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/f_button_white"
+            app:fab_colorPressed="@color/f_button_white_pressed"
+            app:fab_icon="@drawable/icon_point"
+            app:fab_size="mini"
+            app:fab_title="유료화 신청" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/admin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/f_button_white"
+            app:fab_colorPressed="@color/f_button_white_pressed"
+            app:fab_icon="@android:drawable/ic_menu_preferences"
+            app:fab_size="mini"
+            app:fab_title="관리자" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/write_button_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/basic_point_color"
+            app:fab_colorPressed="@color/f_button_white_pressed"
+            app:fab_icon="@drawable/icon_post_write"
+            app:fab_size="mini"
+            app:fab_title="작품관리" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/write_button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/basic_point_color"
+            app:fab_colorPressed="@color/f_button_white_pressed"
+            app:fab_icon="@drawable/icon_seriese_write"
+            app:fab_size="mini"
+            app:fab_title="연재관리" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

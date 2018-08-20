@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/editor_subtitle_padding_size">
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="작품 설명"
+                android:textColor="@color/basic_main_color"
+                android:textSize="@dimen/editor_subtitle_font_size" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint="제목"
+                android:inputType="text"
+                android:minLines="3"
+                android:padding="@dimen/editor_text_input_padding"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/title_reset"
+                android:layout_width="@dimen/editor_text_input_reset_image_size"
+                android:layout_height="@dimen/editor_text_input_reset_image_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/editor_text_input_reset_padding"
+                app:srcCompat="@drawable/icon_delete_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@+id/title"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/border_solo_gray"
+                android:orientation="vertical"></LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/post_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint="설명"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="@dimen/editor_text_input_padding"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/body_reset"
+                android:layout_width="@dimen/editor_text_input_reset_image_size"
+                android:layout_height="@dimen/editor_text_input_reset_image_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="false"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="@dimen/editor_text_input_reset_padding"
+                app:srcCompat="@drawable/icon_delete_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignBottom="@+id/post_body"
+                android:layout_alignParentBottom="false"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/border_solo_gray"
+                android:orientation="vertical"></LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView183"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="크래프토리는 본인의 창작물을 공유하는 공간 입니다."
+            android:textColor="@color/basic_main_color"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView184"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 타인의 창작물을 도용 할 경우 강력한 제재를 받을 수 있습니다."
+            android:textColor="@color/basic_main_color"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/editor_subtitle_padding_size">
+
+            <TextView
+                android:id="@+id/textView801"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="공개범위"
+                android:textColor="@color/basic_main_color"
+                android:textSize="@dimen/editor_subtitle_font_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.beardedhen.androidbootstrap.BootstrapWell
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Switch
+                    android:id="@+id/open_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="전체"
+                    android:textColor="@color/basic_main_color_2"
+                    android:textSize="12sp" />
+
+            </com.beardedhen.androidbootstrap.BootstrapWell>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/editor_subtitle_padding_size">
+
+                <TextView
+                    android:id="@+id/textView8011"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="광고설정"
+                    android:textColor="@color/basic_main_color"
+                    android:textSize="@dimen/editor_subtitle_font_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.BootstrapWell
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Switch
+                        android:id="@+id/ad_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="꺼짐"
+                        android:textColor="@color/basic_main_color_2"
+                        android:textSize="12sp" />
+
+                </com.beardedhen.androidbootstrap.BootstrapWell>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/part_layout_editor_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

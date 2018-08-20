@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.AdminActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/event_posting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_posting_button_text" />
+
+        <Button
+            android:id="@+id/notice_posting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notice_posting_text" />
+
+        <Button
+            android:id="@+id/box_send_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/box_send_button_text" />
+
+        <Button
+            android:id="@+id/alchemy_manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="연성 태그 관리" />
+
+        <Button
+            android:id="@+id/funding_market_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="펀딩마켓 관리" />
+
+        <Button
+            android:id="@+id/test_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="각종 신묘한 기능 테스트 버튼" />
+    </LinearLayout>
+</RelativeLayout>

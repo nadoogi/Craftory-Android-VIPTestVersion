@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_info"
+            android:icon="@drawable/account_icon"
+            android:title="내 정보" />
+
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/ic_action_notice"
+            android:title="공지사항" />
+
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_action_event"
+            android:title="이벤트" />
+
+        <item
+            android:id="@+id/nav_cs"
+            android:icon="@drawable/ic_action_cs"
+            android:title="고객센터" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_action_setting"
+            android:title="설정" />
+
+        <item
+            android:id="@+id/nav_dev"
+            android:icon="@drawable/ic_action_setting"
+            android:title="개발자 메뉴" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

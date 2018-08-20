@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cloud.scalabl.httpspg_app_q0nz5d8azjwlxxrweewghhzuexr7rc.anicast.UserActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_height"
+        android:orientation="vertical">
+
+
+        <include
+            layout="@layout/top_bar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/user_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/top_bar"
+        android:background="#FFFFFF"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/basic_point_color"
+        app:tabMaxWidth="0dp"
+        app:tabMinWidth="0dp"
+        app:tabSelectedTextColor="@color/basic_point_color"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabTextColor="@color/basic_main_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/user_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_tabs" />
+
+</RelativeLayout>
